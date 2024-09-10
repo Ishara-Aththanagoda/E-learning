@@ -1,0 +1,72 @@
+/* src/components/home.css */
+
+.home-container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #080808, #044299, #080808, #261063, #080808);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cff71f;
+    font-size: 30px;
+}
+
+.get-started-btn {
+    padding: 12px 24px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animation for the text */
+.animated-text {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    animation: text-animation 6s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Animation for the gradient background */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
